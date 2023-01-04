@@ -1,12 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -32,25 +26,23 @@
 }
 
 .layers__heading {
-  position: absolute;
-  top: 25%;
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
 }
 
 .layers__title {
   margin: 0;
+  margin-top: calc(var(--index) * -10);
   font-family: 'october_phasma', sans-serif;
-  font-weight: 900;
-  font-size: calc(var(--index) * 5);
-  letter-spacing: 1.5px;
+  font-size: calc(var(--index) * 4);
+  letter-spacing: calc(var(--index) / 2.5);
 }
 
 .layers__subtitle {
+  margin: 0;
   font-family: 'october_phasma', sans-serif;
-  font-weight: 900;
   font-size: calc(var(--index));
-  letter-spacing: 1px;
+  letter-spacing: calc(var(--index) / 6);
   text-align: center;
 }
 
