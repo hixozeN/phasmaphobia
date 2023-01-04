@@ -34,7 +34,7 @@
 
 .layers__title {
   margin: 0;
-  margin-top: calc(var(--index) * -10);
+  margin-top: calc(var(--index) * -6);
   font-family: 'october_phasma', sans-serif;
   font-size: calc(var(--index) * 4);
   letter-spacing: calc(var(--index) / 2.5);
