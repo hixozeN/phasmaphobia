@@ -28,6 +28,8 @@
 .layers__heading {
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
+  color: #f7f7e0;
+  text-shadow: 0 0 20px #BD8B41;
 }
 
 .layers__title {
