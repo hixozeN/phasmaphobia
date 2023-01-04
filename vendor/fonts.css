@@ -1,0 +1,28 @@
+@font-face {
+  font-family: raleway_phasma;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/raleway-black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: raleway_phasma;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/raleway-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: october_phasma;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:  url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.eot");
+  src:  url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/02cbb7a31cfe23290e89f1316ea8886f.svg#October Crow") format("svg");
+}
