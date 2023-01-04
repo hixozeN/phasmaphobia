@@ -7,13 +7,25 @@
 
 .root {
   background-color: #090909;
-  color: #fff;
   font-family: 'raleway_phasma', sans-serif;
   line-height: 1.55;
 }
 
 .header {
   position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: calc(var(--index) * 5);
+  background-image: url(../images/ground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) * -2);
 }
 
 .layers {
@@ -28,7 +40,7 @@
 .layers__heading {
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
-  color: #f7f7e0;
+  color: #f4f4e6;
   text-shadow: 0 0 20px #BD8B41;
 }
 
