@@ -99,6 +99,19 @@
   color: #f4f4e6;
 }
 
+.article::after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: calc(var(--index) * 5);
+  background-image: url(../images/ground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) * -2.2);
+}
+
 .layers__base-campfire {
   transform: translate3d(0, calc((var(--scrollTop) - 100vh) / 1.5), 0);
   z-index: 0;
