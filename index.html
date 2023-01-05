@@ -9,32 +9,63 @@
   <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
 
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
   <script src="./script/app.js" defer></script>
 
   <title>Phasmaphobia</title>
 </head>
 
 <body class="root">
-  <header class="header">
-    <div class="layers">
-      <div class="layers__heading">
-        <h1 class="layers__title">Phasmaphobia</h1>
-        <p class="layers__subtitle">The best detective-horror game</p>
-      </div>
-      <div class="layer layers__base" style="background-image: url(./images/layer-base.png);"></div>
-      <div class="layer layers__middle" style="background-image: url(./images/layer-middle.png);"></div>
-      <div class="layer layers__front" style="background-image: url(./images/layer-front.png);"></div>
-    </div>
-  </header>
+  <div class="wrapper">
+    <div class="content">
 
-  <article class="campfire" style="background-image: url(./images/campfire.jpg);">
-    <h2 class="campfire__title">Lorem, ipsum.</h2>
-    <p class="campfire__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora debitis, inventore
-      in at aspernatur quos commodi explicabo ipsa nihil eius non, quibusdam provident ullam totam? Nisi sit similique,
-      molestiae consequatur adipisci officia iste harum, voluptatum labore recusandae voluptas veniam voluptate
-      cupiditate molestias cum aspernatur sequi rerum velit commodi pariatur dolore eius! Quisquam obcaecati tempora
-      quis explicabo odit tempore similique laboriosam est cum repellendus!</p>
-  </article>
+      <header class="header">
+        <div class="layers">
+          <div class="layers__heading">
+            <h1 class="layers__title">Phasmaphobia</h1>
+            <p class="layers__subtitle">The best detective-horror game</p>
+          </div>
+          <div class="layer layers__base" style="background-image: url(./images/layer-base.png);"></div>
+          <div class="layer layers__middle" style="background-image: url(./images/layer-middle.png);"></div>
+          <div class="layer layers__front" style="background-image: url(./images/layer-front.png);"></div>
+        </div>
+      </header>
+    
+      <article class="article">
+        <div class="layers">
+          <div class="article__heading">
+            <h2 class="article__title">Lorem,&nbsp;ipsum.</h2>
+            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora debitis,
+              inventore
+              in at aspernatur quos commodi explicabo ipsa nihil eius non, quibusdam provident ullam totam? Nisi sit
+              similique,
+              molestiae consequatur adipisci officia iste harum, voluptatum labore recusandae voluptas veniam voluptate
+              cupiditate molestias cum aspernatur sequi rerum velit commodi pariatur dolore eius! Quisquam obcaecati tempora
+              quis explicabo odit tempore similique laboriosam est cum repellendus!</p>
+          </div>
+          <div class="layer layers__base-campfire" style="background-image: url(./images/campfire.jpg);"></div>
+          <div class="layer layers__middle-campfire" style="background-image: url(./images/campfire-middle.png);"></div>
+          <div class="layer layers__front-campfire" style="background-image: url(./images/campfire-front.png);"></div>
+        </div>
+      </article>
+    
+      <article class="article" style="background-image: url(./images/asylium.jpg);">
+        <div class="article__heading">
+          <h2 class="article__title">Lorem,&nbsp;ipsum.</h2>
+          <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora debitis, inventore
+            in at aspernatur quos commodi explicabo ipsa nihil eius non, quibusdam provident ullam totam? Nisi sit
+            similique,
+            molestiae consequatur adipisci officia iste harum, voluptatum labore recusandae voluptas veniam voluptate
+            cupiditate molestias cum aspernatur sequi rerum velit commodi pariatur dolore eius! Quisquam obcaecati tempora
+            quis explicabo odit tempore similique laboriosam est cum repellendus!</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </body>
 
 </html>

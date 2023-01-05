@@ -3,6 +3,7 @@
 
 :root {
   --index: calc(1vw + 1vh);
+  --transition: transform .45s cubic-bezier(.075, .5, 0, 1);
 }
 
 .root {
@@ -25,11 +26,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: calc(var(--index) * -2);
+  bottom: calc(var(--index) * -2.1);
 }
 
 .layers {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +42,8 @@
 .layers__heading {
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
+  transition: var(--transition);
+  will-change: transform;
   color: #f4f4e6;
   text-shadow: 0 0 20px #BD8B41;
 }
@@ -66,8 +70,9 @@
   position: absolute;
   background-size: cover;
   background-position: center center;
-  will-change: transform;
   z-index: 2;
+  will-change: transform;
+  transition: var(--transition);
 }
 
 .layers__base {
@@ -83,12 +88,70 @@
   transform: translate3d(0, calc(var(--scrollTop) / 6), 0);
 }
 
-.campfire {
+.article {
   min-height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center center;
+  color: #f4f4e6;
+}
+
+.layers__base-campfire {
+  transform: translate3d(0, calc((var(--scrollTop) - 100vh) / 1.5), 0);
+  z-index: 0;
+}
+
+.layers__middle-campfire {
+  transform: translate3d(0, calc((var(--scrollTop) - 100vh) / 2.5), 0);
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.layers__middle-campfire_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.layers__front-campfire {
+  transform: translate3d(0, calc((var(--scrollTop) - 100vh) / 10), 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.layers__front-campfire_visibile {
+  visibility: visible;
+  opacity: 1;
+}
+
+.article__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1px 1px 2px #000;
+  max-width: calc(var(--index) * 26);
+  transform: translate3d(0, calc(var(--scrollTop) / 8), 0);
+  will-change: transform;
+  position: absolute;
+  top: calc(var(--index) * 3);
+  z-index: 1;
+}
+
+.article__title {
+  margin: 0;
+  font-size: calc(var(--index) * 2);
+  letter-spacing: calc(var(--index) / 2.5);
+  text-transform: uppercase;
+  margin-bottom: calc(var(--index) * 0.5);
+}
+
+.article__text {
+  margin: 0;
+  font-size: calc(var(--index) * 0.8);
+  letter-spacing: calc(var(--index) / 10);
 }
